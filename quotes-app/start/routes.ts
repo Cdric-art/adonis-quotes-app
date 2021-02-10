@@ -28,4 +28,4 @@ Route.get('/health', async ({response}) => {
     ? response.ok(report)
     : response.badRequest(report)
 })
-Route.on('/').render('welcome')
+Route.on('/').render('layouts/master')
